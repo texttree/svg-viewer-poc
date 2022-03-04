@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import YAML from 'js-yaml-parser';
+import YAML from 'js-yaml';
 import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core';
 
 function Manifest({ link, setProject }) {
@@ -11,7 +11,7 @@ function Manifest({ link, setProject }) {
     axios
       .get(link)
       .then((res) => {
-        const json = res.data ? YAML.safeLoad(res.data) : null;
+        const json = res.data ? YAML.load(res.data) : null;
 
         if (json != null) {
           const _projects = json.projects.filter(
