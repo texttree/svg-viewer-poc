@@ -33,7 +33,7 @@ function SvgViewer({ link, marks }) {
       begin="0.3"/>
   </circle>
 </svg>`;
-    if (link) {
+    if (link && marks) {
       axios
         .get(link)
         .then((res) => {
@@ -42,7 +42,7 @@ function SvgViewer({ link, marks }) {
         })
         .catch((err) => console.log({ err }));
     }
-  }, [link]);
+  }, [link, marks]);
   useEffect(() => {
     if (tspans && marks) {
       tspans.forEach((el) => {
