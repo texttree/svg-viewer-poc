@@ -8,8 +8,16 @@ let sections = [
     content: 'README.md',
   },
   {
-    name: 'Button Block',
-    components: ['src/components/Button/Button.js'],
+    name: 'Manifest Block',
+    components: ['src/components/Manifest/Manifest.js'],
+  },
+  {
+    name: 'SvgViewer Block',
+    components: ['src/components/SvgViewer/SvgViewer.js'],
+  },
+  {
+    name: 'MapsViewer Block',
+    components: ['src/components/MapsViewer/MapsViewer.js'],
   },
 ];
 

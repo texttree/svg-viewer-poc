@@ -1,5 +1,5 @@
 {
-  "name": "@texttree/template-rcl",
+  "name": "@texttree/svg-viewer-poc",
   "author": "TextTree.org",
   "version": "0.1.0",
   "description": "",
@@ -10,14 +10,14 @@
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",
-  "url": "https://github.com/texttree/template-rcl",
-  "homepage": "https://github.com/texttree/template-rcl#readme",
+  "url": "https://github.com/texttree/svg-viewer-poc",
+  "homepage": "https://github.com/texttree/svg-viewer-poc#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/texttree/template-rcl.git"
+    "url": "git+https://github.com/texttree/svg-viewer-poc.git"
   },
   "bugs": {
-    "url": "https://github.com/texttree/template-rcl/issues"
+    "url": "https://github.com/texttree/svg-viewer-poc/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -67,5 +67,10 @@
     "react-dom": "^17.0.2",
     "react-styleguidist": "^11.1.7",
     "webpack": "^5.52.1"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "js-yaml-parser": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
