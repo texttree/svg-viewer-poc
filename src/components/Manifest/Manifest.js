@@ -17,7 +17,6 @@ function Manifest({ link, setProject }) {
           const _projects = json.projects.filter(
             (project) => project.identifier !== 'marks'
           );
-          console.log({ _projects });
           setProjects(_projects);
           setProject(_projects[current]);
         }

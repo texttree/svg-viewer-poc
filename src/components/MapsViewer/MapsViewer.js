@@ -26,7 +26,7 @@ function MapsViewer({ username, repository }) {
       './marks.tsv'
     );
     axios
-      .get(_marksLink)
+      .get(server + _marksLink)
       .then((res) => {
         setMarks(parsingTsv(res.data));
       })
