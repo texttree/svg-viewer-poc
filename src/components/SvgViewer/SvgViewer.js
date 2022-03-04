@@ -34,9 +34,11 @@ function SvgViewer({ link, marks }) {
   </circle>
 </svg>`;
     if (link && marks) {
+      console.log(link);
       axios
         .get(link)
         .then((res) => {
+          console.log(res.data);
           svgRef.current.innerHTML = res.data;
           setTspans(document.querySelectorAll('tspan'));
         })
